@@ -110,4 +110,12 @@ class Snake{
         }
         return false
     }
+
+    checkCollidedWithSelf(){
+        for(let i = 0; i < this.body.length; i++){
+            if(this.x === this.body[i].x && this.y === this.body[i].y){
+                return true
+            }
+        }
+    }
 }
